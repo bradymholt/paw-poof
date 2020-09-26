@@ -2,7 +2,7 @@
 
 Disappearing Paw Patrol Towers
 
-My 4 year-old son had an idea to make his Paw Patrol Towers disappear so threw together a simple web application to do it virtually!
+My 4 year-old son had an idea to make his Paw Patrol Towers disappear so we threw together a simple web application to do it virtually!
 
 ### Instructions
 
