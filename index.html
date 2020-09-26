@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paw Poof</title>
+    <style>     
+      img {
+        position: absolute;
+        width: 100%;
+        top: 0px;
+        display: none;
+      }
+
+      img.current {
+        display: block;
+      }
+    </style>
+    <script>
+      function rotate() {
+        const current = document.getElementsByClassName("current")[0];
+        const next = current.nextElementSibling || document.getElementsByTagName("img")[0];
+
+        current.classList.remove("current");
+        next.classList.add("current");        
+      }     
+    </script>
+  </head>
+  <body>
+    <div onclick="rotate()">
+      <img id="none" class="current" src="./none.jpg" />
+      <img id="lookout" src="./lookout.jpg" />
+      <img id="tower" src="./tower.jpg" />
+      <img id="both" src="./both.jpg" />
+    </div>
+  </body>
+</html>
